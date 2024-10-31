@@ -1,0 +1,9 @@
+.vs/
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+#User information folder
+/playwright/.auth/user.json
+package-lock.json
