@@ -10,7 +10,7 @@ export const test = base.extend<pages>({
     homePage: async ({ page }, use) => {
         let homePage: HomePage;
         await page.goto(Env.BASE_URL);
-        homePage = await new HomePage(page);
-        await use(await homePage);
+        homePage = new HomePage(page);
+        await use(homePage);
     }
 });
