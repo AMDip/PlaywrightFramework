@@ -53,7 +53,6 @@ test.describe('Feature: User Flow', () => {
         })
         await test.step('Then I should see the product and quantity on the cart', async () => {
             await cartPage.checker.cartPageIsVisible();
-            //await cartPage.checker.verifyProductName(productName);
             await cartPage.checker.verifyProductQuantity(RANDOM_NUMBER);
         })
         await test.step('When I click on the checkout button', async () => {
@@ -127,7 +126,7 @@ test.describe('Feature: User Flow', () => {
         await test.step('Then I should the home page', async () => {
             await homePage.checker.homePageTittleImageIsVisible();
         })
-        await test.step('When I on the logout section', async () => {
+        await test.step('When I click on the logout section', async () => {
             await homePage.clickOnLogoutSection();
         })
         await test.step('Then I should see the login form visible again', async () => {
